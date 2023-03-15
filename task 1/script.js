@@ -11,6 +11,19 @@
         });
       });
     
-      
+      equal.addEventListener("click", function (e) {
+        e.preventDefault();
+      if (screen.value === "") {
+        screen.value = "";
+      } else {
+        let answer = eval(screen.value);
+        screen.value = answer;
+      }
+    });
+  
+    clear.addEventListener("click", function (e) {
+        e.preventDefault();
+      screen.value = "";
+    });
     })();
     
