@@ -7,7 +7,7 @@
   }
   body {
     height: 100vh;
-    background: #5B6BBB;
+    background: #373d58;
   }
   .calculator {
     width: 450px;
@@ -17,7 +17,7 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
   }
   .display {
@@ -56,8 +56,8 @@
     background-color: #000;
     color:#fff;
     transition: all 0.3s;
-    transform:skewX(10deg);
-    transform:skewY(5deg);
+    transform:skewX(6deg);
+    transform:skewY(4deg);
   }
   input[type="button"]#equal {
     grid-row: span 1;
@@ -82,3 +82,5 @@ input[type="button"]#clear {
     background-color: #59595e;
 
   }
+
+  
