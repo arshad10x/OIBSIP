@@ -49,4 +49,19 @@
     cursor: pointer;
   }
   
+  .btn:active {
+    background-color: #b4b4b4;
+  }
+  .btn-clear {
+    background-color: #ffa500;
+  }
+  .btn-num {
+    background-color: #fff;
+  }
+  .btn-sign {
+    background-color: LightGray;
+  }
+  .btn-equal {
+    background-color: #3cb371;
+  }
   
