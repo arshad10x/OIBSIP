@@ -3,7 +3,7 @@
   let buttons = document.querySelectorAll(".btn");
   let clear = document.querySelector(".btn-clear");
   let equal = document.querySelector(".btn-equal");
-  let del = document.getElementById("del");
+  let delValue = document.getElementById("del");
 
   window.onload = () => {
     input.value = "";
@@ -29,5 +29,9 @@
   clear.addEventListener("click", function (e) {
     e.preventDefault();
     screen.value = "";
+  });
+
+  delValue.addEventListener("click", () => {
+    input.value = input.value.substr(0, input.value.length - 1);
   });
 })();
