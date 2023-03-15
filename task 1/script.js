@@ -3,6 +3,11 @@
   let buttons = document.querySelectorAll(".btn");
   let clear = document.querySelector(".btn-clear");
   let equal = document.querySelector(".btn-equal");
+  let del = document.getElementById("del");
+
+  window.onload = () => {
+    input.value = "";
+  };
 
   buttons.forEach(function (button) {
     button.addEventListener("click", function (e) {
