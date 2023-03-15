@@ -17,39 +17,43 @@
      <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  
     
-    <div class="content">
+  <div class="calculator">
+    <div class="display">
+      <input type="text" placeholder="0" id="input" disabled />
+    </div>
+    <div class="buttons">
+      <!-- Full Erase -->
+      <input type="button" value="AC" id="clear" />
+      <!-- Erase Single Value -->
+      <input type="button" value="DEL" id="erase" />
 
-        <form>
-          <input type="text" class="screen">
-        </form>
-      
-        <div class="buttons">
-          <button type="button" class="btn-clear" data-num="C">AC</button>
-          <button type="button" id="del">Del</button>
-          <button type="button" class="btn btn-sign" data-num="(">(</button>
-          <button type="button" class="btn btn-sign" data-num=")">)</button>
-          <button type="button" class="btn btn-sign" data-num="/">/</button>
-          <button type="button" class="btn btn-num" data-num="1">1</button>
-          <button type="button" class="btn btn-num" data-num="2">2</button>
-          <button type="button" class="btn btn-num" data-num="3">3</button>
-          <button type="button" class="btn btn-sign" data-num="*">*</button>
-          <button type="button" class="btn btn-num" data-num="4">4</button>
-          <button type="button" class="btn btn-num" data-num="5">5</button>
-          <button type="button" class="btn btn-num" data-num="6">6</button>
-          <button type="button" class="btn btn-sign" data-num="-">-</button>
-          <button type="button" class="btn btn-num" data-num="7">7</button>
-          <button type="button" class="btn btn-num" data-num="8">8</button>
-          <button type="button" class="btn btn-num" data-num="9">9</button>
-          <button type="button" class="btn btn-sign" data-num="+">+</button>
-          <button type="button" class="btn btn-num" data-num="%">%</button>
-          <button type="button" class="btn btn-num" data-num="0">0</button>
-          <button type="button" class="btn btn-num" data-num=".">.</button>
-          <button type="button" class="btn-equal" data-num="=">=</button>
-        </div>
-      
-      </div>
- 
+      <!-- <input type="button" value="(" class="input-button">
+      <input type="button" value=")" class="input-button"> -->
+
+      <input type="button" value="/" class="input-button" />
+      <input type="button" value="*" class="input-button" />
+
+      <input type="button" value="7" class="input-button" />
+      <input type="button" value="8" class="input-button" />
+      <input type="button" value="9" class="input-button" />
+      <input type="button" value="-" class="input-button" />
+
+      <input type="button" value="6" class="input-button" />
+      <input type="button" value="5" class="input-button" />
+      <input type="button" value="4" class="input-button" />
+      <input type="button" value="+" class="input-button" />
+
+      <input type="button" value="1" class="input-button" />
+      <input type="button" value="2" class="input-button" />
+      <input type="button" value="3" class="input-button" />
+
+      <input type="button" value="=" id="equal" />
+      <input type="button" value="0" class="input-button" />
+      <input type="button" value="." class="input-button" />
+    </div>
+  </div>
 
     <!--
      JAVASCRIPT file
