@@ -10,20 +10,20 @@
 <body>
     <div id="bg-main"></div>
  <div id="header">
-    <span> SHAH RUKH KHAN </span>
+    <span id="name"> SHAH RUKH KHAN </span>
+    <div class="quotes">
+        <hi class="auto-input"></hi>
+        <span class="typed-cursor typed-cursor--blink" aria-hidden="false">|</span>
+    </div>
 </div>
 
-<div id="body-text">
-    <h1> <span class="auto-input"></span></h1>
-
-</div>
 
 
 
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed(".auto-input",{
-  strings: ["“My biggest achievement is that I can make people smile just by my presence.”","frontend developer", "Backend Developer"],
+  strings: ['"My biggest achievement is that I can make people smile just by my presence"',],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true
