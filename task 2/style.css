@@ -1,0 +1,40 @@
+body{
+    color:#fff;
+    height: 100vh;
+}
+
+span {
+    font-size: 62px;
+    border-top: 1px solid #838282;
+    border-bottom: 1px solid #838282;
+    outline: none;
+    padding: 10px;
+}
+
+#header{
+    position: relative;
+    top:-10rem;
+    left:25rem;
+}
+ span{
+    position: fixed;
+
+}
+
+#bg-main {
+    z-index:-1;
+    background-image:url(./asset/bg-main.jpg);
+    background-position:fixed;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+    }
+    
+    #body-text {
+    margin-top:250px;
+    }
+
+
