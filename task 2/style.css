@@ -39,16 +39,12 @@ body {
     left: 25rem;
     font-weight: 800;
     /* text-shadow: 5px 5px 8px; */
+    font-size: 62px;
+    outline: none;
+    padding: 10px;
   }
 
-span {
-  font-size: 62px;
-  /* border-top: 1px solid #838282;
-  border-bottom: 1px solid #838282; */
-  font-weight: 900;
-  outline: none;
-  padding: 10px;
-}
+
 
 /* Quotes and Auto Type */
 .quotes {
@@ -91,8 +87,8 @@ h2{
     color:rgb(227, 103, 15);
     text-transform: uppercase;
     letter-spacing: 0.23rem;
-    margin-bottom: 30px;
-  font-size:48px;
+    margin-bottom: 40px;
+    font-size:48px;
 }
 
 p{
@@ -100,6 +96,17 @@ p{
   font-size: 16px;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+.img-1992{
+    margin: -5rem 0 0 10rem;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}
+ 
+h3{
+    margin-top: 5rem;
 }
 
 .btn{
