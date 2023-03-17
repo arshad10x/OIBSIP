@@ -74,7 +74,7 @@ body {
 /* Main Section  */
 main{
     position: absolute;
-    width: 40%;
+    width: 45%;
     height: 1000vh;
     top: 45rem;
     left:1rem;
@@ -88,7 +88,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 0.23rem;
     margin-bottom: 40px;
-    font-size:48px;
+    font-size:52px;
 }
 
 p{
@@ -99,8 +99,18 @@ p{
 }
 
 .img-1992{
-    margin: -5rem 0 0 10rem;
-    padding: 10px;
+    margin: 2rem 0.5rem 0 0;
+    width: 150px;
+    height: 150px; 
+}
+
+.img-1994{
+    margin: 2rem 0.5rem 0 0;
+    width: 150px;
+    height: 170px; 
+}
+
+#cdi{
     width: 150px;
     height: 150px;
 }
