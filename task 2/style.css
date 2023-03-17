@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins,sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins,sans-serif';
 }
 
 body {
   color: #fff;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 #bg-main {
@@ -19,18 +22,20 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%); */
   }
 
 
   
   #header {
     position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   
   #name {
     position: fixed;
-    top: 2rem;
+    top: 3rem;
     left: 25rem;
     font-weight: 800;
     /* text-shadow: 5px 5px 8px; */
@@ -38,25 +43,25 @@ body {
 
 span {
   font-size: 62px;
-  border-top: 1px solid #838282;
-  border-bottom: 1px solid #838282;
+  /* border-top: 1px solid #838282;
+  border-bottom: 1px solid #838282; */
+  font-weight: 900;
   outline: none;
   padding: 10px;
 }
 
-
+/* Quotes and Auto Type */
 .quotes {
-  width: 50%;
-  height: 100vh;
+  width: 55%;
   margin: 350px 0 0 40px;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .quotes .auto-input {
   font-size: 40px;
-  font-weight: 800;
 }
 
 .typed-cursor--blink {
@@ -65,7 +70,42 @@ span {
   display: none;
 }
 .typed-cursor {
-  position: fixed;
+  /* position: fixed; */
   border: none;
   font-size: 30px;
+}
+
+/* Main Section  */
+main{
+    position: absolute;
+    width: 40%;
+    height: 1000vh;
+    top: 45rem;
+    left:1rem;
+    background-color: transparent;
+    /* z-index: 1; */
+}
+
+
+h2{
+    color:rgb(227, 103, 15);
+    text-transform: uppercase;
+    letter-spacing: 0.23rem;
+    margin-bottom: 30px;
+  font-size:48px;
+}
+
+p{
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.btn{
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
 }
