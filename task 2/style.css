@@ -153,19 +153,16 @@ article{
   font-style: inherit;
   font-size: 20px;
   text-align: justify;
-  background-image: url(./poster/kkr-bg.jpeg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-origin: border-box;
+  margin-top: 2rem;
 }
-
-
-#ipl{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#title{
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: none;
+  font-size: 28px;
+  text-align: justify;
 }
-
 
 
 
