@@ -88,7 +88,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 0.23rem;
     margin-bottom: 40px;
-    font-size:52px;
+    font-size:48px;
 }
 
 p{
@@ -96,6 +96,7 @@ p{
   font-size: 16px;
   line-height: 1.5rem;
   text-align: justify;
+  color: #cfcece;
 }
 
 .img-1992{
@@ -135,7 +136,7 @@ h3{
 #cricket{
   color:rgb(227, 103, 15);
   text-transform: uppercase;
-  font-size:48px;
+  font-size:58px;
   font-weight: 600;
 }
 
@@ -146,7 +147,7 @@ h3{
 article{
 
   font-size: 16px;
-  color: #fff;
+  color: #cfcece;
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   text-transform: none;
@@ -164,6 +165,11 @@ article{
   text-align: justify;
 }
 
+#title a{
+  text-decoration: none;
+  color: #fff;
+
+}
 
 
 
