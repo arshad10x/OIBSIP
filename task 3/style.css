@@ -21,13 +21,14 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--dark);
     color: #fff;
+    background: var(--dark);
 }
 
 header{
     padding: 2rem 1rem;
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -46,7 +47,7 @@ input, button{
     appearance: none;
     border: none;
     outline:none;
-    background: color ;
+    background: none ;
 }
 
 #new-task-input{
@@ -59,12 +60,18 @@ input, button{
     font-size: 1.25rem;
 }
 
-#new-task-input{
+#new-task-input::placeholder{
+    color:var(--gray);
+}
+
+#new-task-submit{
     color:var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     cursor: pointer;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     transition: 0.4s;
 }
 
@@ -78,7 +85,6 @@ input, button{
 
 main{
     flex: 1 1 0%;
-    padding:2rem 1rem;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
