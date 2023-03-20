@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO APP</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 
@@ -18,7 +20,7 @@
             placeholder="Let's start your day" />
             <input type="submit"
             id="new-task-submit"
-            value="ADD Task">
+            value="ADD Task" />
         </form>
     </header>
 
@@ -30,7 +32,19 @@
                     <input 
                     type="text"
                     class="text"
-                    value="" />
+                    value="The Tasks"
+                    readonly />
+                </div>
+                <div class="actions" >
+                    <button 
+                    class="edit">Edit
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                    <button
+                     class="delete">Delete
+                     <i class="fa-solid fa-trash"></i>
+                    </button>
+                    
                 </div>
             </div>
         </section>
@@ -41,8 +55,6 @@
 
 
 
-
-    
     <script src="./script.js"></script>
 </body>
 </html>
