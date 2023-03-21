@@ -1,64 +1,47 @@
-window.addEventListener('load', () => {
-	const form = document.querySelector("#new-task-form");
-	const input = document.querySelector("#new-task-input");
-	const list_element = document.querySelector("#tasks");
+(function(){
+  
+    var list = document.querySelector('#list'),
+        form = document.querySelector('form'),
+        item = document.querySelector('#item');
+    
+        function updateCurrentDate() {
+            const now = new Date();
+            const currentDateElement = document.getElementById("current-date");
+            currentDateElement.innerHTML = now.toLocaleString();
+          }
+      
+          // Update the date and time every second (1000 milliseconds)
+          setInterval(updateCurrentDate, 1000);
 
-	form.addEventListener('submit', (e) => {
-		e.preventDefault();
-
-		const task = input.value;
-
-		const task_element = document.createElement('div');
-		task_element.classList.add('task');
-
-		const task_content_element = document.createElement('div');
-		task_content_element.classList.add('content');
-
-		task_element.appendChild(task_content_el);
-
-		const task_input_element = document.createElement('input');
-		task_input_element.classList.add('text');
-		task_input_element.type = 'text';
-		task_input_element.value = task;
-		task_input_element.setAttribute('readonly', 'readonly');
-
-		task_content_element.appendChild(task_input_element);
-
-		const task_actions_element = document.createElement('div');
-		task_actions_element.classList.add('actions');
-		
-		const task_edit_element = document.createElement('button');
-		task_edit_element.classList.add('edit');
-		task_edit_element.innerText = 'Edit';
-
-		const task_delete_element = document.createElement('button');
-		task_delete_element.classList.add('delete');
-		task_delete_element.innerText = 'Delete';
-
-		task_actions_element.appendChild(task_edit_element);
-		task_actions_element.appendChild(task_delete_element);
-
-		task_element.appendChild(task_actions_element);
-
-		list_element.appendChild(task_element);
-
-		input.value = '';
-
-		task_edit_element.addEventListener('click', (e) => {
-            e.preventDefault();
-			if (task_edit_element.innerText.toLowerCase() == "edit") {
-				task_edit_element.innerText = "Save";
-				task_input_element.removeAttribute("readonly");
-				task_input_element.focus();
-			} else {
-				task_edit_element.innerText = "Edit";
-				task_input_element.setAttribute("readonly", "readonly");
-			}
-		});
-
-		task_delete_element.addEventListener('click', (e) => {
-            e.preventDefault();
-			list_element.removeChild(task_element);
-		});
-	});
-});
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      list.innerHTML += '<li>' + item.value + '</li>';
+      store();
+      item.value = "";
+    },false)
+    
+    list.addEventListener('click',function(e){
+      var t = e.target;
+      if(t.classList.contains('checked')){
+        t.parentNode.removeChild(t);
+      } else {
+        t.classList.add('checked');
+      }
+      store();
+    },false)
+    
+    function store() {
+      window.localStorage.myitems = list.innerHTML;
+    }
+    
+    function getValues() {
+      var storedValues = window.localStorage.myitems;
+      if(!storedValues) {
+        list.innerHTML = '<li>Make a to do list</li>';
+      }
+      else {
+        list.innerHTML = storedValues;
+      }
+    }
+    getValues();
+  })();
