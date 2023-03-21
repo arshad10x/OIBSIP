@@ -36,13 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const textNode = document.createElement('span');
       textNode.textContent = task;
 
-      // Create delete button and add event listener
-      const deleteButton = document.createElement('button');
-      deleteButton.textContent = 'Delete';
-      deleteButton.addEventListener('click', function() {
-        deleteTask(i);
-      });
-
       // Create edit button and add event listener
       const editButton = document.createElement('button');
       editButton.textContent = 'Edit';
@@ -50,10 +43,18 @@ document.addEventListener('DOMContentLoaded', function() {
         editTask(i, listItem, textNode);
       });
 
+      // Create delete button and add event listener
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Delete';
+      deleteButton.addEventListener('click', function() {
+        deleteTask(i);
+      });
+
+
       // Append text node and buttons to list item
       listItem.appendChild(textNode);
-      listItem.appendChild(deleteButton);
       listItem.appendChild(editButton);
+      listItem.appendChild(deleteButton);
 
       // Append list item to list
       list.appendChild(listItem);
@@ -94,23 +95,29 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  // Create a new Date object
-var currentDate = new Date();
+  // Function to update the time
+function updateTime() {
+	// Create a new Date object
+	var currentDate = new Date();
 
-// Get the day of the week (0-6)
-var dayOfWeek = currentDate.getDay();
+	// Get the day of the week (0-6)
+	var dayOfWeek = currentDate.getDay();
 
-// Define an array of days of the week
-var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	// Define an array of days of the week
+	var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-// Get the name of the day of the week
-var dayName = days[dayOfWeek];
+	// Get the name of the day of the week
+	var dayName = days[dayOfWeek];
 
-// Get the current time
-var currentTime = currentDate.toLocaleTimeString();
+	// Get the current time
+	var currentTime = currentDate.toLocaleTimeString();
 
-// Add the day and time to an HTML element
-document.getElementById('date').innerHTML = dayName +" "+ currentTime;
+	// Add the day and time to an HTML element
+	document.getElementById('date').innerHTML = dayName + ' ' + currentTime;
+}
+
+// Call the updateTime function every second
+setInterval(updateTime, 1000);
 
   // Call updateUI() on page load
   updateUI();
